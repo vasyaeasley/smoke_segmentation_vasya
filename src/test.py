@@ -24,7 +24,7 @@ def main(data_dir, out_file, batch_size, bands, model_path, num_workers):
         device = torch.device('cpu')
 
     # define model class and load model
-    model = unet.UNetSmall(num_channels=len(bands)+2)
+    model = unet.UNetSmall(num_channels=3)
     model_dict = torch.load(model_path, map_location=device)
     model.load_state_dict(model_dict['state_dict'])
     

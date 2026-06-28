@@ -42,8 +42,8 @@ def main(data_path, batch_size, num_epochs, start_epoch, learning_rate, momentum
     data_root_dir = data_path.split('/')[-2]
 
     # get model
-    model = unet.UNetSmall(num_channels=len(bands)+2)
-    #model = unet.UNet(num_channels=len(bands)+2)
+    model = unet.UNetSmall(num_channels=3)
+    #model = unet.UNet(num_channels=3)
 
     if torch.cuda.is_available():
         model = model.cuda()
