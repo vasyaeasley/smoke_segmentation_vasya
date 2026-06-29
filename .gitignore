@@ -1,10 +1,12 @@
 data/*
+.venv/
 .DS_Store*
 .satpy_temp/*
 *.ipynb_checkpoints*
 *.pyc
 src/models/checkpoint/*
 src/models/*.pth
+tempo_unet_weights.pth
 etc/*
 checkpoints/*
 logs/*
